@@ -33,7 +33,8 @@ angular.module('app',
     //custom
     'component',
     'hero',
-    'input-utilities'
+    'input-utilities',
+    'version'
   ]);
 
 

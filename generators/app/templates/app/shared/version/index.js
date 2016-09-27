@@ -1,5 +1,6 @@
-/**
- * Created by ericjohndixon on 9/26/16.
- */
+let versionModule = angular.module('version', []);
+
 import versionConstant from './version-constant';
 versionConstant();
+
+export default versionModule

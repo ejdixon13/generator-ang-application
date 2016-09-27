@@ -5,12 +5,11 @@ import rename from 'gulp-rename';
 
 export default function () {
   return ngConstant({
-    name: 'app',
+    name: 'version',
     constants: {
       VERSION: config.get('appVersion'),
       DEBUG_INFO_ENABLED: true
     },
-    template: config.get('constantTemplate'),
     stream: true
   })
     .pipe(rename('version-constant.js'))
