@@ -1,0 +1,57 @@
+.btn {
+  padding-bottom: 3px;
+  padding-top: 2px;
+  font-size: 14px;
+  font-family: $font__family--sans;
+  //font-size: 16px;
+  font-weight: 100;
+}
+
+.btn-primary {
+  background-color: $alt-lds-blue;
+  border-color: $alt-lds-blue-border;
+}
+
+.btn-danger-hover {
+  background-color: #a6a6a6;
+  border-color: #9b9b9b;
+  color: white;
+}
+
+.btn-danger-hover:hover {
+  background-color: #888888;
+  border-color: #9b9b9b;
+  color: white;
+}
+
+.btn-success-hover {
+  color: white;
+  background-color: $btn-success-blue;
+  border-color: #4d9adc;
+}
+.btn-success-hover:hover {
+  color: white;
+  background-color: #258FC1;
+  border-color: $btn-success-blue;
+}
+
+.btn-success-hover.disabled, .btn-success-hover[disabled], fieldset[disabled] .btn-success-hover, .btn-success-hover.disabled:hover, .btn-success-hover[disabled]:hover, fieldset[disabled] .btn-success-hover:hover, .btn-success-hover.disabled:focus, .btn-success-hover[disabled]:focus, fieldset[disabled] .btn-success-hover:focus, .btn-success-hover.disabled.focus, .btn-success-hover[disabled].focus, fieldset[disabled] .btn-success-hover.focus, .btn-success-hover.disabled:active, .btn-success-hover[disabled]:active, fieldset[disabled] .btn-success-hover:active, .btn-success-hover.disabled.active, .btn-success-hover[disabled].active, fieldset[disabled] .btn-success-hover.active {
+  background-color: $btn-success-blue;
+  color: white;
+  border-color: transparent;
+}
+
+.button-group {
+  margin-top: 15px;
+  button {
+    margin-right: 10px;
+  }
+}
+
+.button, input[type="button"] {
+  margin-top: 10px;
+}
+
+.btn-pointer {
+  cursor: pointer;
+}

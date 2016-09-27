@@ -1,0 +1,9 @@
+{
+    "directory": "lib",
+        "registry": {
+            "search": [
+                "http://bower.ldschurch.org",
+                "https://bower.herokuapp.com"
+            ]
+        }
+}

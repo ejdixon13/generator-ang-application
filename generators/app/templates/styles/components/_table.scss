@@ -1,0 +1,51 @@
+/************* BOOTSTRAP TABLE MODS **************/
+.table {
+  th {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  tbody {
+    tr {
+      td {
+        border-top: none !important;
+        position: relative;
+        .fa-close {
+          font-size: 23px;
+        }
+        &.delete-column {
+          width: 35px;
+        }
+      }
+      &.row-has-errors {
+        border: 2px double $color__red--400; // double trumps solid tr border-bottom
+      }
+    }
+  }
+  close-icon {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.table.table-sortable {
+  th:first-child {
+    padding-left: 20px;
+  }
+  td{
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
+  th {
+    font-weight: normal;
+    color: $header-blue;
+    cursor: pointer;
+  }
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $row-odd-color;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: solid 1px gainsboro;
+}

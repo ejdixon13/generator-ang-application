@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="<%= ngapp %>">
+<head>
+  <meta charset="UTF-8">
+  <script type="application/javascript">var ANGULAR_MIN_JS_LOADED, ANGULAR_RESOURCE_MIN_JS_LOADED,
+    ANGULAR_ANIMATE_MIN_JS_LOADED, ANGULAR_MOCKS_JS_LOADED, ANGULAR_UI_ROUTER_MIN_JS_LOADED, ANGULAR_MESSAGES_MIN_JS_LOADED, UNDERSCORE_MIN_JS_LOADED,
+    UI_BOOTSTRAP_TPLS_MIN_JS_LOADED, ANGULAR_BREADCRUMB_MIN_JS_LOADED, SPIN_MIN_JS_LOADED, ANGULAR_SPINNER_MIN_JS_LOADED,
+    ANGULAR_TOASTR_TPLS_JS_LOADED, JQUERY_MIN_JS_LOADED, JQUERY_UI_MIN_JS_LOADED;</script>
+  <title ng-bind="pageTitle"></title>
+
+  <!--Third Party css-->
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/angular-hover-edit/dist/angular-hover-edit.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.css" />
+
+
+  <!-- build:css app.css -->
+  <link rel="stylesheet" href="{{app-name}}.{{app-version}}.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+<section ui-view="header"></section>
+<section ui-view="main" class="container-fluid view"></section>
+<section ui-view="footer"></section>
+
+<!--CDN-->                                                                                                                                                                                     <!--Fallback Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" onload="ANGULAR_MIN_JS_LOADED=1"></script>                                                                   <script>ANGULAR_MIN_JS_LOADED || document.write('<script src="lib/angular/angular.js">\x3C/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js" onload="ANGULAR_RESOURCE_MIN_JS_LOADED=1"></script>                                                 <script>ANGULAR_RESOURCE_MIN_JS_LOADED || document.write('<script src="lib/angular-resource/angular-resource.min.js">\x3C/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js" onload="ANGULAR_ANIMATE_MIN_JS_LOADED=1"></script>                                                   <script>ANGULAR_ANIMATE_MIN_JS_LOADED || document.write('<script src="lib/angular-animate/angular-animate.min.js">\x3C/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-mocks.js" onload="ANGULAR_MOCKS_JS_LOADED=1"></script>                                                               <script>ANGULAR_MOCKS_JS_LOADED || document.write('<script src="lib/angular-mocks/angular-mocks.js">\x3C/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js" onload="ANGULAR_MOCKS_JS_LOADED=1"></script>                                                           <script>ANGULAR_MOCKS_JS_LOADED || document.write('<script src="lib/angular-touch/angular-touch.min.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js" onload="ANGULAR_UI_ROUTER_MIN_JS_LOADED=1"></script>                                     <script>ANGULAR_UI_ROUTER_MIN_JS_LOADED || document.write('<script src="lib/angular-ui-router/release/angular-ui-router.js">\x3C/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js" onload="ANGULAR_MESSAGES_MIN_JS_LOADED=1"></script>                                                 <script>ANGULAR_MESSAGES_MIN_JS_LOADED || document.write('<script src="lib/angular-messages/angular-messages.min.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" onload="UNDERSCORE_MIN_JS_LOADED=1"></script>                                                        <script>UNDERSCORE_MIN_JS_LOADED || document.write('<script src="lib/underscore/underscore-min.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.4/ui-bootstrap-tpls.min.js" onload="UI_BOOTSTRAP_TPLS_MIN_JS_LOADED=1"></script>                                   <script>UI_BOOTSTRAP_TPLS_MIN_JS_LOADED || document.write('<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-breadcrumb/0.4.1/angular-breadcrumb.min.js" onload="ANGULAR_BREADCRUMB_MIN_JS_LOADED=1"></script>                                   <script>ANGULAR_BREADCRUMB_MIN_JS_LOADED || document.write('<script src="lib/angular-breadcrumb/release/angular-breadcrumb.min.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js" onload="SPIN_MIN_JS_LOADED=1"></script>                                                                          <script>SPIN_MIN_JS_LOADED || document.write('<script src="lib/spin.js/spin.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.8.1/angular-spinner.min.js" onload="ANGULAR_SPINNER_MIN_JS_LOADED=1"></script>                                            <script>ANGULAR_SPINNER_MIN_JS_LOADED || document.write('<script src="lib/angular-spinner/angular-spinner.js">\x3C/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.tpls.min.js" onload="ANGULAR_TOASTR_TPLS_JS_LOADED=1"></script>                                         <script>ANGULAR_TOASTR_TPLS_JS_LOADED || document.write('<script src="lib/angular-toastr/dist/angular-toastr.tpls.js">\x3C/script>')</script>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous" onload="JQUERY_MIN_JS_LOADED=1"></script>     <script>JQUERY_MIN_JS_LOADED || document.write('<script src="lib/jquery/dist/jquery.min.js">\x3C/script>')</script>
+
+
+<!--NON-CDN-->
+<script src="lib/angular-hover-edit/dist/angular-hover-edit.min.js"></script>
+<script src="lib/angular-http-helper/dist/angular-http-helper.min.js"></script>
+<script src="lib/angular-toastr-exception/dist/angular-toastr-exception.min.js"></script>
+<script src="lib/angular-input-utilities/dist/angular-input-utilities.min.js"></script>
+<script src="lib/angular-common-modals/dist/angular-mms-common-modals.min.js"></script>
+
+<!--EVERYTHING ELSE-->
+<script src="{{app-name}}.{{app-version}}.js"></script>
+
+<script type="application/javascript">
+    angular.module('<%= ngapp %>').controller('ctrl', [function(){
+        var vm = this;
+        vm.test = 'Test Complete';
+    }])
+</script>
+</body>
+</html>

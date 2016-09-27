@@ -1,0 +1,46 @@
+{
+  "name": "<%= ngapp %>",
+  "version": "1.0.0",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-mocks": "1.5.8",
+    "angular-resource": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-messages": "1.5.8",
+    "angular-touch": "1.5.8",
+    "jquery": "3.1.0",
+    "lumen-sass": "3.0.7",
+    "angular-bootstrap": "1.3.2",
+    "lumen-icon": "2.0.3",
+    "angular-ui-router": "0.2.18",
+    "angular-breadcrumb": "0.4.1",
+    "angular-toastr": "1.7.0",
+    "angular-http-helper": "*",
+    "angular-toastr-exception": "*",
+    "angular-input-utilities": "*",
+    "underscore": "1.8.3",
+    "angular-hover-edit": "*",
+    "spin.js": "2.3.2",
+    "angular-spinner": "0.8.1",
+    "angular-common-modals": "angular-mms-common-modals#*"
+  },
+  "moduleType": [
+    "globals"
+  ],
+  "resolutions": {
+    "angular-spinner": "0.8.1",
+    "angular": "1.5.8",
+    "angular-bootstrap": "1.3.2",
+    "angular-toastr": "1.7.0"
+  }
+}
