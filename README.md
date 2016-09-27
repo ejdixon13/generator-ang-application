@@ -7,7 +7,7 @@ First, install [Yeoman](http://yeoman.io) and generator-ang-application using [n
 
 ```bash
 npm install -g yo
-npm install -g generator-ang-application
+npm install -G generator-ang-application
 ```
 
 Then generate your new project:

@@ -188,6 +188,9 @@ module.exports = generators.Base.extend({
         }
       );
       this.fs.copyTpl(this.templatePath('./app/components/component/component-tpl.html'), this.destinationPath('app/components/component/component-tpl.html'));
+      this.fs.copyTpl(this.templatePath('./app/components/hero/heroDetail/heroDetail-tpl.html'), this.destinationPath('./app/components/hero/heroDetail/heroDetail-tpl.html'));
+      this.fs.copyTpl(this.templatePath('./app/components/hero/heroList/heroList-tpl.html'), this.destinationPath('./app/components/hero/heroList/heroList-tpl.html'));
+
     }
   },
   conflicts: function() {
@@ -200,14 +203,16 @@ module.exports = generators.Base.extend({
   end: function() {
     this.log(chalk.yellow.bold('Installation successful!'));
 
+    var gulpBuild = '\nNow run ' + chalk.yellow.bold('gulp build')+ ' to get the build working\n';
+    var versionConstantNote = '\nThe version constant needs modification in order to work with es6. You may need to add a template, or manually modify the module.\n';
     var howToPublish =
-      '\nAfter you have completed development on your angular component you may publish to the bower.ldschurch registry in order to be used in other projects.' +
+      '\nAfter you have completed development on your angular application you may publish to the bower.ldschurch registry in order to be used in other projects.' +
       '\nFirst, you must make sure you have this project committed to a remote repo (ie Stash or Git). After committing project to a repo, you simply use the command:' +
       '\n\n' + chalk.yellow.bold('bower register <my-package-name> <git-endpoint>') +
       '\n\nFor Example:' +
       '\n' + chalk.yellow.bold('bower register example-component git://github.com/user/example-component.git') +
       '\n\nAnd wallah! you may now use ' + chalk.yellow.bold('bower install example-component') + ' in any of your applications to add this component to your project.';
 
-    this.log(howToPublish);
+    this.log(gulpBuild + versionConstantNote + howToPublish);
   }
 });
